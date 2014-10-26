@@ -1,0 +1,134 @@
+@import url(http://fonts.googleapis.com/css?family=Kaushan+Script);
+@import url(http://fonts.googleapis.com/css?family=Cutive+Mono);
+
+html.sb-static .sb-slidebar, .sb-slidebar.sb-static {
+	position: absolute;
+}
+
+html.sb-scroll-lock.sb-active:not(.sb-static) {
+	overflow: hidden; /* Prevent site from scrolling when a Slidebar is open, except when static Slidebars are only available. */
+}
+
+h1{ 
+	font: 60px 'Kaushan Script'; 
+	text-align:center 
+}
+
+h3{ 
+	font: 24px 'Cutive Mono';
+	text-align:center;
+	padding: 10px 0 
+}
+
+h4{ 
+	font: 14px 'Cutive Mono';
+	position: relative
+	padding: 20px 0
+}
+
+h4:before{ 
+	background: none repeat scroll 0 0 #c63636;
+    border-radius: 20px;
+    content: "";
+    height: 20px;
+    left: -30px;
+    position: absolute;
+    top: 16px;
+    width: 20px; 
+   }
+   
+ a{
+ 	text-decoration: none
+ }
+ 
+ .phrase{
+ 	font: 12px 'Cutive Mono';
+ 	text-align: center
+ }
+ 
+.sb-open-right.sixteen.columns {
+    float: right;
+    width: 48px;
+}
+
+.sb-slidebar{
+	height: 100%;
+	overflow-y: auto;
+	position: fixed;
+	top: 0;
+	z-index: 0; /* Slidebars sit behind sb-site. */
+	display: none;
+	-webkit-transform: translate(0px);
+	background:#fff
+	color:000
+	font: 16px 'Cutive Mono'
+	width: 30%;
+}
+
+.sb-right {
+	right: 0; /* Set Slidebar to the right. */
+}
+
+.sb-slidebar.sb-active {
+	display: block;
+}
+
+.sb-style-overlay {
+	z-index: 9999;
+}
+
+.sb-momentum-scrolling {
+	-webkit-overflow-scrolling: touch; 
+}
+
+ul.menu-slider{
+	margin-top: 20px
+	padding:10px
+}
+
+ul.menu-slider li{
+	display: block;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+.menu-slider li:hover{
+	background: #299ADB
+	display:block
+}
+
+@media (max-width: 480px) { 
+	.sb-slidebar {
+		width: 30%;
+	}
+	
+	.sb-width-thin {
+		width: 55%;
+	}
+	
+	.sb-width-wide {
+		width: 85%;
+	}
+}
+
+.sb-slide, #sb-site, .sb-site-container, .sb-slidebar {
+	-webkit-transition: -webkit-transform 400ms ease;
+	   -moz-transition: -moz-transform 400ms ease;
+	     -o-transition: -o-transform 400ms ease;
+	        transition: transform 400ms ease;
+	-webkit-transition-property: -webkit-transform, left, right;	
+	-webkit-backface-visibility: hidden;
+}
+ 
+.sb-hide { 
+	display: none;
+}
+
+footer{
+	font: 12px 'Cutive Mono'
+	text-align: center
+}
+
+footer a{
+	color:#C63636!important
+}
