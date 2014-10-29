@@ -84,7 +84,8 @@ h4{
 	font: 14px 'Cutive Mono';
 	position: relative
 	padding: 20px 0;
-	text-transform: uppercase
+	text-transform: uppercase;
+	margin-left: 30px
 }
 
 p{ 
@@ -120,7 +121,7 @@ h4:before{
  
  .back-logo:after{
 	content: "";
-	background: url("../img/logo.png") -20px -30px no-repeat;
+	background: url("../img/logo.png") no-repeat;
 	opacity: 0.15;
 	top: 0;
 	left: 0;
@@ -182,10 +183,12 @@ ul.menu-slider li{
 }
 
 @media (max-width: 480px) { 
-	.add-top{
-		margin-top: -10px!important
+	h1{ 
+		font-size: 54px;
 	}
-	
+	h4{ 
+		margin-left: 34px;
+	}
 	.map{
 		max-width:100%!important
 	}
