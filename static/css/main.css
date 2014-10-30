@@ -78,12 +78,8 @@ h4 {
   text-transform: uppercase;
   margin-left: 30px;
 }
-p {
-  font: 12px 'Cutive Mono';
-  text-align: center;
-}
 h4:before {
-  background: none repeat scroll 0 0 #c63636;
+  background: #c63636;
   border-radius: 20px;
   content: "";
   height: 20px;
@@ -92,8 +88,48 @@ h4:before {
   top: 16px;
   width: 20px;
 }
+h4.azul {
+  text-transform: none !important;
+}
+h4.azul:before {
+  background: #3d81c4;
+}
+p {
+  font: 12px 'Cutive Mono';
+}
 a {
   text-decoration: none;
+}
+form {
+  width: 100%;
+}
+label {
+  font: 14px 'Cutive Mono';
+}
+input[type="text"],
+textarea {
+  padding: 8px 0;
+  width: 100%;
+}
+.button,
+button {
+  background: #232323;
+  color: #fff;
+  display: block;
+  font: 14px "Cutive Mono";
+  margin: 0 auto;
+  text-shadow: none;
+  text-transform: uppercase;
+  width: 30%;
+}
+.button:hover,
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover {
+  background: #232323;
+  color: #fff;
+  text-shadow: none;
 }
 .phrase {
   font: 14px 'Cutive Mono';
@@ -157,6 +193,24 @@ ul.menu-slider li {
   background: #299adb;
   display: block;
 }
+figure.thumbnail {
+  display: inline-block;
+  height: auto;
+  width: 16%;
+}
+figure.video {
+  height: auto;
+  width: 100%;
+}
+figure.thumbnail img {
+  width: 100%;
+}
+figure.video img {
+  width: 100%;
+}
+.fancybox-opened figure.thumbnail {
+  width: 100%;
+}
 @media (max-width: 480px) {
   h1 {
     font-size: 54px;
@@ -175,6 +229,15 @@ ul.menu-slider li {
   }
   .sb-width-wide {
     width: 85%;
+  }
+  figure.thumbnail {
+    display: inline-block;
+    height: auto;
+    width: 18%;
+  }
+  figure.video {
+    height: auto;
+    width: 100%;
   }
 }
 .sb-slide,
