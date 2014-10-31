@@ -168,57 +168,6 @@ input[type="text"], textarea {
 	z-index: -1;   
 }
 
-.sb-open-right.sixteen.columns {
-    float: right;
-    width: 48px;
-}
-
-.sb-slidebar{
-	height: 100%;
-	overflow-y: auto;
-	position: fixed;
-	top: 0;
-	z-index: 1;
-	display: none;
-	-webkit-transform: translate(0px);
-	background:#fff
-	color:000
-	font: 16px 'Cutive Mono'
-	width: 30%;
-}
-
-.sb-right {
-	right: 0; /* Set Slidebar to the right. */
-}
-
-.sb-slidebar.sb-active {
-	display: block;
-}
-
-.sb-style-overlay {
-	z-index: 9999;
-}
-
-.sb-momentum-scrolling {
-	-webkit-overflow-scrolling: touch; 
-}
-
-ul.menu-slider{
-	margin-top: 20px
-	padding:10px
-}
-
-ul.menu-slider li{
-	display: block;
-    padding: 10px;
-    text-transform: uppercase;
-}
-
-.menu-slider li:hover{
-	background: #299ADB
-	display:block
-}
-
 figure.thumbnail {
 	display:inline-block
     height: auto;
@@ -242,52 +191,6 @@ figure.video img{
 	width: 100%;
 }
 
-@media (max-width: 480px) { 
-	h1{ 
-		font-size: 54px;
-	}
-	h4{ 
-		margin-left: 34px;
-	}
-	.map{
-		max-width:100%!important
-	}
-	
-	.sb-slidebar {
-		width: 30%;
-	}
-	
-	.sb-width-thin {
-		width: 55%;
-	}
-	
-	.sb-width-wide {
-		width: 85%;
-	}
-	figure.thumbnail{ 
-		display: inline-block;
-		height: auto;
-		width: 18%;
-	}
-	figure.video{ 
-		height: auto;
-		width: 100%;
-	}
-}
-
-.sb-slide, #sb-site, .sb-site-container, .sb-slidebar {
-	-webkit-transition: -webkit-transform 400ms ease;
-	   -moz-transition: -moz-transform 400ms ease;
-	     -o-transition: -o-transform 400ms ease;
-	        transition: transform 400ms ease;
-	-webkit-transition-property: -webkit-transform, left, right;	
-	-webkit-backface-visibility: hidden;
-}
- 
-.sb-hide { 
-	display: none;
-}
-
 .list-column{
 	display: inline-table;
 	margin-bottom: 0;
@@ -306,7 +209,7 @@ ul.list-column li{
 }
 
 footer{
-	bottom: 0;
+	bottom: 6px;
 	font: 12px "Cutive Mono";
 	position: relative;
 	text-align: center;
@@ -315,4 +218,161 @@ footer{
 
 footer a{
 	color:#C63636!important
+}
+
+.sb-open-right.sixteen.columns {
+    display: none;
+}
+
+.desktop-menu-container{
+	border-bottom: 1px solid #d6d6d6;
+	border-top: 1px solid #d6d6d6;
+}
+
+.menu{ 
+	margin: 0;
+	padding: 10px 0;
+	text-align: center;
+	width: 100%;
+}
+
+.menu > li{ 
+	display: inline-block;
+	font-weight: bold;
+	margin: 0 30px 0 0;
+}
+
+.menu > li a:hover{ 
+	color: #c63636
+}
+
+.menu > li:last-child{ 
+	margin-right: 0
+}
+
+@media (max-width: 480px) { 
+
+	h1{ 
+		font-size: 54px;
+	}
+	
+	h4{ 
+		margin-left: 34px;
+	}
+	
+	.map{
+		max-width:100%!important
+	}
+	
+	.sb-slidebar {
+		width: 30%;
+	}
+	
+	.sb-width-thin {
+		width: 55%;
+	}
+	
+	.sb-width-wide {
+		width: 85%;
+	}
+	
+	figure.thumbnail{ 
+		display: inline-block;
+		height: auto;
+		width: 18%;
+	}
+	
+	figure.video{ 
+		height: auto;
+		width: 100%;
+	}
+	
+	.navicon-line {
+	    background-color: #000;
+	    border-radius: 1px;
+	    height: 4px;
+	    margin-bottom: 3px;
+	    width: 24px;
+	}
+
+	.sb-open-right.sixteen.columns {
+	    display: block !important;
+        float: right;
+        height: 25px;
+        padding-top: 10px;
+        right: 0;
+        width: 25px;
+	}
+	
+	.sb-slidebar{
+		height: 100%;
+		overflow-y: auto;
+		position: fixed;
+		top: 0;
+		z-index: 1;
+		display: none;
+		-webkit-transform: translate(0px);
+		background:#fff
+		color:000
+		font: 16px 'Cutive Mono'
+		width: 30%;
+	}
+	
+	.sb-right {
+		right: 0;
+	}
+	
+	.sb-slidebar.sb-active {
+		display: block;
+	}
+	
+	.sb-style-overlay {
+		z-index: 9999;
+	}
+	
+	.sb-momentum-scrolling {
+		-webkit-overflow-scrolling: touch; 
+	}
+	
+	ul.menu-slider{
+		margin-top: 20px
+		padding:10px
+	}
+	
+	ul.menu-slider li{
+		display: block;
+	    padding: 10px;
+	    text-transform: uppercase;
+	}
+	
+	.menu-slider li:hover{
+		background: #299ADB
+		display:block
+	}
+	
+	.sb-slide, #sb-site, .sb-site-container, .sb-slidebar {
+		-webkit-transition: -webkit-transform 400ms ease;
+		   -moz-transition: -moz-transform 400ms ease;
+		     -o-transition: -o-transform 400ms ease;
+		        transition: transform 400ms ease;
+		-webkit-transition-property: -webkit-transform, left, right;	
+		-webkit-backface-visibility: hidden;
+	}
+	 
+	.sb-hide { 
+		display: none;
+	}
+	
+	.desktop-menu-container.sixteen.columns{
+		display: none!important;
+	}
+	
+}
+
+@media (min-width: 481px) and (max-width: 760px){
+	
+	.sb-open-right.sixteen.columns {
+	    display: none;
+	}
+
 }
